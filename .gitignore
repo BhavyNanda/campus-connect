@@ -1,0 +1,10 @@
+**/.env
+**/.env.*
+!**/.env.example
+**/venv/
+**/__pycache__/
+**/.agents/
+backend/.[!.]*/
+backend/data/
+backend/skills/
+backend/skills-lock.json
