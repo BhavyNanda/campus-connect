@@ -1,20 +1,27 @@
 import os
+from pathlib import Path
 from uuid import UUID
 
 from dotenv import load_dotenv
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 from postgrest import APIError
 from supabase import Client, create_client
 
 
-load_dotenv()
+load_dotenv(Path(__file__).with_name(".env"))
 
-app = Flask(__name__)
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PUBLIC_DIR = PROJECT_ROOT / "public"
+
+app = Flask(
+    __name__,
+    static_folder=PUBLIC_DIR / "static",
+    static_url_path="/static",
+)
 
 supabase: Client = create_client(
     os.environ["SUPABASE_URL"],
-    os.environ.get("SUPABASE_PUBLISHABLE_KEY")
-    or os.environ["SUPABASE_SERVICE_ROLE_KEY"],
+    os.environ["SUPABASE_PUBLISHABLE_KEY"],
 )
 
 
@@ -28,20 +35,25 @@ def _valid_uuid(value):
 @app.errorhandler(APIError)
 def handle_database_error(error):
     code = getattr(error, "code", None)
-    app.logger.exception("Supabase request failed")
+    app.logger.error("Supabase request failed: %s", error.message)
 
     if code == "23505":
         return jsonify(error="Registration already exists."), 409
     if code == "23503":
         return jsonify(error="The referenced user or event does not exist."), 404
     if code == "42501":
-        return jsonify(error="Database permissions do not allow this operation."), 403
+        return jsonify(
+            error=(
+                "Supabase denied access. Run backend/supabase_public_api.sql "
+                "in the Supabase SQL Editor to configure the event API permissions."
+            )
+        ), 403
     return jsonify(error="A database error occurred."), 500
 
 
 @app.get("/")
 def index():
-    return jsonify(message="Events API is running.")
+    return send_from_directory(PUBLIC_DIR, "index.html")
 
 
 @app.get("/api/events")

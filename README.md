@@ -2,6 +2,8 @@
 
 Flask API backed by Supabase.
 
+The responsive frontend is served at `/` by the Flask app locally and by Vercel's CDN when deployed; the deployment-ready files are in `public/`. It uses the event and registration API routes below and requires no separate frontend build.
+
 ## Run locally
 
 1. Copy `backend/.env.example` to `backend/.env` and set your Supabase URL and publishable key.
@@ -10,9 +12,13 @@ Flask API backed by Supabase.
 
 ## Deploy to Render
 
-The root-level `render.yaml` configures the Render web service. Create or update the service to use this Blueprint, then set `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` in the Render environment. The root-level `requirements.txt` includes the backend dependencies, and the Gunicorn start command serves the Flask app on Render's assigned port. Python is pinned to 3.13.4 for deployment compatibility.
+The root-level `render.yaml` configures the Render web service. Create or update the service to use this Blueprint, then set `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` in the Render environment. The root-level `requirements.txt` includes the backend dependencies, and the Gunicorn start command serves the Flask app on Render's assigned port. Python is pinned to the latest 3.13 patch for deployment compatibility.
 
-The Supabase database must have the `users`, `events`, and `registrations` tables shown in `backend/database.png`. Configure Supabase table permissions and row-level security policies for the operations you want to allow.
+## Deploy to Vercel
+
+Import the repository root as the Vercel project. `pyproject.toml` points Vercel to the Flask app, `.python-version` selects Python 3.13, and the frontend assets in `public/` are served by Vercel's CDN. Add `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` in the Vercel project environment settings, then deploy. The Flask app serves the same frontend locally and handles the `/api/*` routes in the Vercel Python runtime.
+
+The Supabase database must have the `users`, `events`, and `registrations` tables shown in `backend/database.png`. Run `backend/supabase_public_api.sql` in the Supabase SQL Editor to allow this unauthenticated API to read events and create/read registrations. These policies make registration data public; replace them with user-scoped policies when authentication is added.
 
 ## API
 

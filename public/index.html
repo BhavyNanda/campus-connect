@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f9ff">
+    <meta name="description" content="Find campus events and manage your event registrations with Campus Connect.">
+    <title>Campus Connect — Find your campus people</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#" aria-label="Campus Connect home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M16 5.5v21M5.5 16h21M8.6 8.6l14.8 14.8m0-14.8L8.6 23.4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+              <circle cx="16" cy="5.5" r="2.7" fill="currentColor"/><circle cx="16" cy="26.5" r="2.7" fill="currentColor"/>
+              <circle cx="5.5" cy="16" r="2.7" fill="currentColor"/><circle cx="26.5" cy="16" r="2.7" fill="currentColor"/>
+              <circle cx="8.6" cy="8.6" r="2.2" fill="currentColor"/><circle cx="23.4" cy="23.4" r="2.2" fill="currentColor"/>
+              <circle cx="23.4" cy="8.6" r="2.2" fill="currentColor"/><circle cx="8.6" cy="23.4" r="2.2" fill="currentColor"/>
+              <circle cx="16" cy="16" r="3" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="brand-name">Campus<span>Connect</span></span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a class="nav-link active" href="#events">Discover events</a>
+          <a class="nav-link" href="#my-registrations">My registrations</a>
+          <a class="nav-link" href="#about">About</a>
+          <button class="button button-small button-outline nav-profile" id="profile-button" type="button">Set up profile</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero page-width" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span>Your campus, closer</span>
+          <h1 id="hero-title">Find your people.<br><span>Find your next thing.</span></h1>
+          <p>Discover what’s happening around campus, meet people who share your interests, and save your spot at the events you love.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#events">Explore events <span aria-hidden="true">↗</span></a>
+            <a class="button button-light" href="#my-registrations">My registrations <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-icon" aria-hidden="true">✳</span>
+            <span>A little more campus, a lot more connection.</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-sun"></div>
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-card art-card-main">
+            <span class="art-label">GOOD THINGS HAPPEN HERE</span>
+            <div class="art-illustration">
+              <div class="illustration-sun"></div>
+              <div class="illustration-building building-left"><i></i><i></i><i></i></div>
+              <div class="illustration-building building-center"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="illustration-building building-right"><i></i><i></i><i></i></div>
+              <div class="illustration-ground"></div>
+              <div class="illustration-person person-one"></div>
+              <div class="illustration-person person-two"></div>
+              <div class="illustration-person person-three"></div>
+            </div>
+            <div class="art-card-footer">
+              <span class="art-avatar avatar-one">C</span>
+              <span class="art-avatar avatar-two">J</span>
+              <span class="art-avatar avatar-three">M</span>
+              <span>Make room for something new</span>
+            </div>
+          </div>
+          <div class="floating-note">
+            <span class="floating-note-icon" aria-hidden="true">✦</span>
+            <span><strong>Your next favorite memory</strong><small>is just around the corner</small></span>
+          </div>
+          <span class="art-sparkle sparkle-one">✳</span>
+          <span class="art-sparkle sparkle-two">✦</span>
+        </div>
+      </section>
+
+      <section class="community-strip page-width" aria-label="Campus Connect">
+        <div class="strip-copy">
+          <span class="strip-icon" aria-hidden="true">✳</span>
+          <span>Campus life is better <strong>together.</strong></span>
+        </div>
+        <div class="strip-stats">
+          <span><strong id="event-count">—</strong> events to explore</span>
+          <span class="strip-divider" aria-hidden="true"></span>
+          <span><strong id="registration-count">—</strong> your registrations</span>
+        </div>
+      </section>
+
+      <section class="events-section page-width" id="events" aria-labelledby="events-title">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow"><span class="eyebrow-dot"></span>Make a day of it</span>
+            <h2 id="events-title">What’s happening on campus</h2>
+            <p class="section-description">A new idea, a familiar face, or something you’ve never tried. It starts here.</p>
+          </div>
+          <div class="event-tools">
+            <label class="search-box">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <span class="visually-hidden">Search events</span>
+              <input id="event-search" type="search" placeholder="Find an event" autocomplete="off">
+              <kbd>/</kbd>
+            </label>
+          </div>
+        </div>
+
+        <div class="event-filters" role="group" aria-label="Filter events">
+          <button class="filter-chip selected" type="button" data-filter="all" aria-pressed="true">All events <span id="all-event-count">0</span></button>
+          <button class="filter-chip" type="button" data-filter="open" aria-pressed="false">Open to join</button>
+        </div>
+
+        <div class="event-grid" id="event-grid" aria-live="polite">
+          <div class="loading-state"><span class="loading-spinner" aria-hidden="true"></span><span>Finding your campus events…</span></div>
+        </div>
+        <div class="inline-error" id="events-error" role="alert" hidden></div>
+      </section>
+
+      <section class="registrations-section page-width" id="my-registrations" aria-labelledby="registrations-title">
+        <div class="registrations-panel">
+          <div class="registrations-heading">
+            <div>
+              <span class="eyebrow"><span class="eyebrow-dot"></span>Your campus calendar</span>
+              <h2 id="registrations-title">The things you’re looking forward to</h2>
+              <p class="section-description">Your event sign-ups, gathered in one place.</p>
+            </div>
+            <button class="button button-outline" id="registration-profile-button" type="button">Add your user ID <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="registration-list" id="registration-list" aria-live="polite">
+            <div class="registration-empty">
+              <span class="empty-icon" aria-hidden="true">✳</span>
+              <div><strong>Your next good thing is out there.</strong><p>Add your user ID to see your registrations, or browse events to find one.</p></div>
+              <a class="text-link" href="#events">Browse events <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="inline-error" id="registrations-error" role="alert" hidden></div>
+        </div>
+      </section>
+
+      <section class="closing-banner page-width" id="about">
+        <div class="closing-mark" aria-hidden="true">✳</div>
+        <div>
+          <span class="closing-kicker">Good things grow together</span>
+          <h2>Make campus feel a little more like yours.</h2>
+          <p>Show up curious. Leave with a story.</p>
+        </div>
+        <a class="button button-white" href="#events">See what’s on <span aria-hidden="true">↗</span></a>
+        <div class="banner-decoration" aria-hidden="true"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner page-width">
+        <a class="brand footer-brand" href="#" aria-label="Campus Connect home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M16 5.5v21M5.5 16h21M8.6 8.6l14.8 14.8m0-14.8L8.6 23.4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="16" cy="5.5" r="2.7" fill="currentColor"/><circle cx="16" cy="26.5" r="2.7" fill="currentColor"/><circle cx="5.5" cy="16" r="2.7" fill="currentColor"/><circle cx="26.5" cy="16" r="2.7" fill="currentColor"/><circle cx="16" cy="16" r="3" fill="currentColor"/></svg>
+          </span>
+          <span class="brand-name">Campus<span>Connect</span></span>
+        </a>
+        <p>Bringing campus life a little closer, one gathering at a time.</p>
+        <a class="footer-top" href="#">Back to top ↑</a>
+        <span class="footer-copyright">© <span id="current-year"></span> Campus Connect</span>
+      </div>
+    </footer>
+
+    <dialog class="modal" id="profile-dialog" aria-labelledby="profile-title">
+      <form class="modal-content" id="profile-form">
+        <button class="modal-close" type="button" data-close-dialog aria-label="Close dialog">×</button>
+        <span class="modal-symbol" aria-hidden="true">✳</span>
+        <span class="eyebrow"><span class="eyebrow-dot"></span>A quick heads-up</span>
+        <h2 id="profile-title">Connect your campus ID</h2>
+        <p>Authentication isn’t enabled yet. Enter your Supabase user UUID to view your registrations or register for an event.</p>
+        <label class="field-label" for="user-id-input">Your user UUID</label>
+        <input class="text-input" id="user-id-input" name="user-id" type="text" inputmode="text" autocomplete="off" placeholder="00000000-0000-0000-0000-000000000000" required>
+        <p class="field-hint">This ID is stored in this browser only. Don’t use someone else’s ID.</p>
+        <div class="form-error" id="profile-error" role="alert" hidden>Enter a valid UUID to continue.</div>
+        <button class="button button-primary modal-submit" type="submit">Save user ID <span aria-hidden="true">→</span></button>
+      </form>
+    </dialog>
+
+    <dialog class="modal event-modal" id="event-dialog" aria-labelledby="event-dialog-title">
+      <div class="modal-content">
+        <button class="modal-close" type="button" data-close-dialog aria-label="Close dialog">×</button>
+        <span class="eyebrow"><span class="eyebrow-dot"></span>Event details</span>
+        <h2 id="event-dialog-title"></h2>
+        <div class="detail-grid" id="event-detail-content"></div>
+        <div class="inline-error" id="event-detail-error" role="alert" hidden></div>
+        <button class="button button-primary modal-submit" id="detail-register-button" type="button">Register for this event <span aria-hidden="true">→</span></button>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
