@@ -11,8 +11,7 @@ from supabase import Client, create_client
 
 load_dotenv(Path(__file__).with_name(".env"))
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-PUBLIC_DIR = PROJECT_ROOT / "public"
+PUBLIC_DIR = Path(__file__).resolve().parent / "public"
 
 app = Flask(
     __name__,
@@ -44,7 +43,7 @@ def handle_database_error(error):
     if code == "42501":
         return jsonify(
             error=(
-                "Supabase denied access. Run backend/supabase_public_api.sql "
+                "Supabase denied access. Run supabase_public_api.sql "
                 "in the Supabase SQL Editor to configure the event API permissions."
             )
         ), 403
