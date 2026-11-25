@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-error-container": "#93000a",
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed-variant": "#3f465c",
+          "primary-fixed-dim": "#ffb599",
+          "secondary-fixed-dim": "#ffb95f",
+          "on-primary-container": "#fffbff",
+          "on-secondary": "#ffffff",
+          "inverse-surface": "#213145",
+          "primary-container": "#cc4900",
+          "surface-container": "#e5eeff",
+          "error": "#ba1a1a",
+          "tertiary-fixed-dim": "#bec6e0",
+          "secondary": "#855300",
+          "inverse-on-surface": "#eaf1ff",
+          "secondary-container": "#fea619",
+          "on-background": "#0b1c30",
+          "surface-container-highest": "#d3e4fe",
+          "on-surface": "#0b1c30",
+          "on-primary": "#ffffff",
+          "on-surface-variant": "#5a4138",
+          "surface-container-high": "#dce9ff",
+          "on-tertiary": "#ffffff",
+          "surface-tint": "#a73a00",
+          "primary-fixed": "#ffdbce",
+          "primary": "#a33900",
+          "on-tertiary-fixed": "#131b2e",
+          "surface-dim": "#cbdbf5",
+          "on-tertiary-container": "#fefcff",
+          "outline": "#8e7166",
+          "surface-container-low": "#eff4ff",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-container": "#684000",
+          "secondary-fixed": "#ffddb8",
+          "surface-variant": "#d3e4fe",
+          "on-error": "#ffffff",
+          "on-primary-fixed-variant": "#7f2b00",
+          "surface": "#f8f9ff",
+          "tertiary-fixed": "dae2fd",
+          "inverse-primary": "#ffb599",
+          "on-secondary-fixed-variant": "#653e00",
+          "background": "#f8f9ff",
+          "surface-bright": "#f8f9ff",
+          "on-secondary-fixed": "#2a1700",
+          "on-primary-fixed": "#370e00",
+          "outline-variant": "#e2bfb2",
+          "tertiary-container": "#6c748b",
+          "tertiary": "#545c72"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-mobile": "1rem",
+          "space-sm": "0.5rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "gutter": "1.5rem",
+          "gutter-mobile": "1rem",
+          "space-lg": "1.5rem",
+          "margin": "2rem",
+          "space-xl": "2.5rem"
+        },
+        "fontFamily": {
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-sm": [
+            "1.125rem",
+            {
+              "lineHeight": "1.5rem",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl": [
+            "2.25rem",
+            {
+              "lineHeight": "2.75rem",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "1rem",
+            {
+              "lineHeight": "1.5rem",
+              "fontWeight": "400"
+            }
+          ],
+          "label-lg": [
+            "0.875rem",
+            {
+              "lineHeight": "1.25rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "0.6875rem",
+            {
+              "lineHeight": "0.875rem",
+              "letterSpacing": "0.05em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.025em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "2rem",
+            {
+              "lineHeight": "2.5rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "body-sm": [
+            "0.875rem",
+            {
+              "lineHeight": "1.25rem",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "3rem",
+            {
+              "lineHeight": "3.5rem",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-md": [
+            "1.25rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.75rem",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "1.75rem",
+            {
+              "lineHeight": "2.25rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><img alt="Campus Connect Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrD4IPFQZcBCy5M4-WLA7PMDQNvUTxJGKMGqb-fgaeu4W24Uq2QBkahWNYViumOXjyt4i0k_e1NEzS591thi5SQAm0zzBDC7oBcQwrGrzI9m8m5ToUFaht9tPro4CKesnckoHNV0A_AD5cRQ9AmVuy9Obn5EPkrw2JldwYorEcC2pFefJwtva34922SOYU88L5vXuCgAaHZdXxWXgihpYRKtdUmy60Ol2g6Pqbm6nKgJsQ"/><span class="font-headline-md text-headline-md text-on-surface tracking-tight font-bold">Campus Connect</span></div><div class="hidden xl:flex items-center flex-1 max-w-xs mx-space-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-4 py-2 bg-surface-container-lowest text-on-surface placeholder:text-outline text-label-md font-label-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Search clubs, events, notes..." type="text"/></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a><a aria-current="page" class="transition-colors text-primary font-bold" data-path="services" href="#">Services</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="login" href="#">Login</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact-us" href="#">Contact Us</a></nav><div class="flex items-center gap-space-md shrink-0"><button aria-label="Notifications" class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-primary rounded-full ring-2 ring-surface"></span></button><a class="hidden sm:inline-flex items-center justify-center px-space-md py-2 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg transition-colors shadow-sm" data-path="register" href="#">Register Now</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="max-w-[1280px] mx-auto px-margin py-space-lg"><div class="flex flex-col w-full">
+<!-- Interactive Top Broadcast Notice Strip -->
+<div class="w-full bg-secondary-fixed text-on-secondary-fixed px-space-md py-space-xs rounded-xl mb-space-lg flex flex-wrap items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0" style="font-variation-settings: 'FILL' 1;">campaign</span>
+<p class="font-label-lg text-label-lg truncate">
+<span class="font-bold">Campus Sync:</span> Spring Hackathon registrations &amp; textbook donations close this Friday 11:59 PM.
+      </p>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<a class="font-label-md text-label-md underline hover:text-on-secondary font-bold text-secondary" href="#marketplace-section">Browse listings →</a>
+</div>
+</div>
+<!-- Main Header Module with Search & Fast Actions -->
+<div class="relative bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-sm mb-space-xl overflow-hidden">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="absolute right-40 -bottom-20 w-64 h-64 rounded-full bg-secondary-fixed/40 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-space-xs bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full text-label-sm font-label-sm uppercase tracking-wider mb-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+          Student Ecosystem Directory
+        </div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight font-extrabold mb-space-xs">
+          Services &amp; Campus Hub
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          Access clubs, hackathons, academic archives, and the verified student marketplace all in one place.
+        </p>
+</div>
+<!-- Quick Action Group -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center gap-space-xs px-space-md py-3 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm hover:shadow-md transition-all active:scale-[0.98]" onclick="document.getElementById('post-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+          Post a Listing
+        </button>
+<a class="inline-flex items-center gap-space-xs px-space-md py-3 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg rounded-lg transition-colors" href="#pyq-archive">
+<span class="material-symbols-outlined text-[18px] text-tertiary">cloud_download</span>
+          Exam Archive
+        </a>
+</div>
+</div>
+<!-- Filter Tabs Navigation -->
+<div class="mt-space-xl pt-space-md flex items-center justify-between gap-space-md overflow-x-auto no-scrollbar">
+<div class="flex items-center gap-space-xs shrink-0" id="filter-tabs">
+<button class="tab-btn px-4 py-2 rounded-full font-label-lg text-label-lg bg-primary text-on-primary shadow-sm transition-all" data-target="all" type="button">
+          All Services
+        </button>
+<button class="tab-btn px-4 py-2 rounded-full font-label-lg text-label-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-target="clubs" type="button">
+          Clubs &amp; Societies
+        </button>
+<button class="tab-btn px-4 py-2 rounded-full font-label-lg text-label-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-target="hackathons" type="button">
+          Events &amp; Hackathons
+        </button>
+<button class="tab-btn px-4 py-2 rounded-full font-label-lg text-label-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-target="notes" type="button">
+          Notes &amp; PYQs
+        </button>
+<button class="tab-btn px-4 py-2 rounded-full font-label-lg text-label-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-target="marketplace" type="button">
+          Marketplace
+        </button>
+</div>
+<!-- Compact Search Bar within Hub -->
+<div class="hidden md:flex items-center relative w-64 shrink-0">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">filter_list</span>
+<input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-lowest text-on-surface text-label-md font-label-md rounded-lg focus:outline-none focus:bg-surface-container-high transition-colors placeholder:text-outline" id="hub-keyword-filter" placeholder="Quick keyword filter..." type="text"/>
+</div>
+</div>
+</div>
+<!-- SECTION 1: Campus Clubs & Societies -->
+<section class="hub-section mb-space-xl" id="clubs-section">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">Campus Clubs &amp; Societies</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Find your tribe, attend workshops, and collaborate on campus projects.</p>
+</div>
+<span class="font-label-md text-label-md text-tertiary bg-surface-container px-3 py-1 rounded-full self-start sm:self-center">3 Active Guilds Featured</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Club Card 1 -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300">
+<div>
+<div class="relative h-44 w-full rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-tech university engineering lab with undergraduate students testing autonomous miniature rover prototypes and robotic arms under warm task lighting, modern collegiate backdrop with digital whiteboard schemes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDte7jkGD_jAydShOPsWxdTzTnWhFu_Bt7Pw7fvrDZwLq0abacCTTzYngYBRCi59meV0ekNq5zr7Y2OHZzIK3qmfBePQIIG9mgkf1vReLiqCvD34SjUJFD9U_57geecSq9TkN383XMtogAsFSDXTI-JYow-gA8ZjRM1qpyj2U5VilQpPcxs-JjrBlnTShim0tq1J3tY9TVpi1rhBz5xUViCASaC_ISE7BYdVDnBc7gr"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Tech / Robotics</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold group-hover:text-primary transition-colors">AI &amp; Robotics Society</h3>
+<span class="font-label-sm text-label-sm font-semibold bg-surface-container-high text-on-surface px-2 py-0.5 rounded">Lab Sprint</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Weekly lab sprints, ROS robotics workshops, and state-level battle-bot tournament preparations.</p>
+<div class="flex flex-wrap items-center gap-space-xs text-label-sm font-label-sm text-tertiary mb-space-lg">
+<span class="inline-flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px] text-primary">groups</span> 240 Members
+            </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px] text-secondary">schedule</span> Wed 5:30 PM
+            </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">pin_drop</span> MakerLab 204
+            </span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<button class="flex-1 py-2.5 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm transition-all active:scale-[0.98]" onclick="handleJoinClub(this, 'AI &amp; Robotics')">
+            Join Club
+          </button>
+<button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Club Charter &amp; Details">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</button>
+</div>
+</div>
+<!-- Club Card 2 -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300">
+<div>
+<div class="relative h-44 w-full rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Wood-paneled collegiate parliamentary debate hall with student speakers in smart attire at wooden podiums, warm sunlight streaming through historic mullioned windows, expressive and intellectual debate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHokyH9ft9ZyhUiaDKcUxPeUDTmXCrntVvh69XnoXvUZTGebhNshkaDX-sc1qVWVcavFo16ZMaq_oscN-KQov2psf2z6V1eWXofVrUxnyB765QQWxZWdCKziQadIeG6r4m2pEVkxjMM-nm30UwfaqmgGv8u17uiuM83jV1LUIAWnxhT-Z1UK3FtulaAbrUbsmDvADdrLxtsE-2-RFmWF-YHRkdiTbfcifIL7Ez3tSF"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Cultural &amp; Arts</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold group-hover:text-primary transition-colors">Debating &amp; Literary Club</h3>
+<span class="font-label-sm text-label-sm font-semibold bg-surface-container-high text-on-surface px-2 py-0.5 rounded">BP Debate</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Parliamentary debate tournaments, monthly student anthologies, and public speaking coaching clinics.</p>
+<div class="flex flex-wrap items-center gap-space-xs text-label-sm font-label-sm text-tertiary mb-space-lg">
+<span class="inline-flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px] text-primary">groups</span> 120 Members
+            </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px] text-secondary">schedule</span> Thu 6:00 PM
+            </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">pin_drop</span> Dean Hall C
+            </span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<button class="flex-1 py-2.5 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm transition-all active:scale-[0.98]" onclick="handleJoinClub(this, 'Debating Club')">
+            Join Club
+          </button>
+<button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Club Charter &amp; Details">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</button>
+</div>
+</div>
+<!-- Club Card 3 -->
+<div class="group bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300">
+<div>
+<div class="relative h-44 w-full rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Active college student volunteers planting saplings and handling composting bins in a lush sunlit university botanical garden community patch, warm golden morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArsn_zmm-gt0Yph4_jhFJY1i9Vuqusv0aD7XF_aFfuCywwF2MvMrq7VMc_42bQbsdBTHFgA0Qz-d1FylWoOm82rUcUVVBnv5FqyEF4lI-33zjh-60bp3DAhK0DgDOuMKJL_6LuXUTVK20ETpH0XtgBrTKP1U3wm8GVljsIMn1vDSN5cWohmC2MWo8YjLlWGT-NwDQ2hl9lAiItKFvPOJ7-Jb2BnNkUSjtS80iD4Tfq"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Social Impact</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold group-hover:text-primary transition-colors">Campus Green Initiative</h3>
+<span class="font-label-sm text-label-sm font-semibold bg-surface-container-high text-on-surface px-2 py-0.5 rounded">Eco-Drive</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Solar recycling stations, zero-waste cafeteria audits, and campus-wide tree plantation drives.</p>
+<div class="flex flex-wrap items-center gap-space-xs text-label-sm font-label-sm text-tertiary mb-space-lg">
+<span class="inline-flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px] text-primary">groups</span> 85 Members
+            </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px] text-secondary">schedule</span> Sat 10:00 AM
+            </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">pin_drop</span> Quad Pavilion
+            </span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<button class="flex-1 py-2.5 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm transition-all active:scale-[0.98]" onclick="handleJoinClub(this, 'Green Initiative')">
+            Join Club
+          </button>
+<button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Club Charter &amp; Details">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Upcoming Hackathons & Events -->
+<section class="hub-section mb-space-xl" id="hackathons-section">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">Upcoming Hackathons &amp; Events</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Competitions, cultural spectacles, and research keynotes happening this month.</p>
+</div>
+<a class="font-label-lg text-label-lg text-primary font-bold hover:underline self-start sm:self-center" href="#">View Academic Calendar →</a>
+</div>
+<!-- Asymmetric Feature Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<!-- Marquee Main Hackathon Card (7 cols) -->
+<div class="lg:col-span-7 bg-inverse-surface text-inverse-on-surface rounded-xl p-space-lg md:p-space-xl flex flex-col justify-between relative overflow-hidden shadow-md">
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-primary/20 blur-3xl pointer-events-none"></div>
+<div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 bg-primary text-on-primary font-label-sm text-label-sm font-bold uppercase rounded-full">Flagship Hackathon</span>
+<span class="px-2.5 py-1 bg-white/10 text-inverse-on-surface font-label-sm text-label-sm rounded-full">Hybrid Mode</span>
+</div>
+<span class="font-label-lg text-label-lg text-secondary-fixed-dim font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span> $5,000 Prize Pool
+            </span>
+</div>
+<h3 class="font-headline-xl text-headline-xl text-inverse-on-surface font-extrabold mb-space-xs">HackTheCampus 2025</h3>
+<p class="font-body-md text-body-md text-surface-variant max-w-xl mb-space-lg">
+            36-hour sprint tackling AI in campus sustainability, automated timetabling, and peer welfare infrastructure. Teams of 2 to 4. Mentorship by alumni in Silicon Valley.
+          </p>
+<!-- Countdown Visual Display -->
+<div class="bg-white/5 rounded-xl p-space-md max-w-md backdrop-blur-sm mb-space-lg">
+<div class="font-label-sm text-label-sm text-surface-dim uppercase tracking-wider mb-2">Registration Closes In</div>
+<div class="grid grid-cols-4 gap-2 text-center" id="countdown-timer">
+<div class="bg-white/10 rounded-lg py-2">
+<span class="font-headline-lg text-headline-lg font-bold text-inverse-on-surface" id="count-days">04</span>
+<span class="block font-label-sm text-label-sm text-surface-dim">Days</span>
+</div>
+<div class="bg-white/10 rounded-lg py-2">
+<span class="font-headline-lg text-headline-lg font-bold text-inverse-on-surface" id="count-hours">12</span>
+<span class="block font-label-sm text-label-sm text-surface-dim">Hours</span>
+</div>
+<div class="bg-white/10 rounded-lg py-2">
+<span class="font-headline-lg text-headline-lg font-bold text-inverse-on-surface" id="count-mins">30</span>
+<span class="block font-label-sm text-label-sm text-surface-dim">Mins</span>
+</div>
+<div class="bg-white/10 rounded-lg py-2">
+<span class="font-headline-lg text-headline-lg font-bold text-primary-fixed-dim" id="count-secs">45</span>
+<span class="block font-label-sm text-label-sm text-surface-dim">Secs</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-sm">
+<div class="flex items-center gap-space-sm text-body-sm text-surface-variant">
+<span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">location_on</span> Main Tech Complex</span>
+<span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary-fixed-dim">group</span> 48 Teams Registered</span>
+</div>
+<button class="px-space-lg py-3 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold rounded-lg shadow-md transition-all active:scale-[0.98]" onclick="handleEventRSVP(this, 'HackTheCampus 2025')">
+            Register Now
+          </button>
+</div>
+</div>
+<!-- Right Stack of Event Cards (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md justify-between">
+<!-- Event Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col sm:flex-row gap-space-md justify-between items-start sm:items-center shadow-sm hover:shadow-md transition-all">
+<div class="flex items-start gap-space-md">
+<div class="w-16 h-16 rounded-xl bg-secondary-fixed flex flex-col items-center justify-center text-on-secondary-fixed shrink-0">
+<span class="font-label-sm text-label-sm uppercase font-bold">Nov</span>
+<span class="font-headline-md text-headline-md font-extrabold leading-none">28</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-0.5 rounded text-on-surface">Campus Live</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">Annual Autumn Cultural Gala</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Open Amphitheatre • 6:30 PM
+              </p>
+</div>
+</div>
+<button class="w-full sm:w-auto px-4 py-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg rounded-lg transition-colors shrink-0" onclick="handleEventRSVP(this, 'Cultural Gala')">
+            Get Pass
+          </button>
+</div>
+<!-- Event Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col sm:flex-row gap-space-md justify-between items-start sm:items-center shadow-sm hover:shadow-md transition-all">
+<div class="flex items-start gap-space-md">
+<div class="w-16 h-16 rounded-xl bg-primary-fixed flex flex-col items-center justify-center text-on-primary-fixed shrink-0">
+<span class="font-label-sm text-label-sm uppercase font-bold">Dec</span>
+<span class="font-headline-md text-headline-md font-extrabold leading-none">02</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-0.5 rounded text-on-surface">Distinguished Lecture</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">Quantum Computing Frontiers</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Auditorium 3 • Dr. Aris Thorne
+              </p>
+</div>
+</div>
+<button class="w-full sm:w-auto px-4 py-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg rounded-lg transition-colors shrink-0" onclick="handleEventRSVP(this, 'Quantum Keynote')">
+            RSVP
+          </button>
+</div>
+<!-- Event Card 4: Quick Mini Pitch -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">event_note</span>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">Organizing a club event?</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reserve university venues and AV equipment in 2 clicks.</p>
+</div>
+</div>
+<a class="px-3 py-1.5 bg-surface-container-lowest hover:bg-surface text-on-surface font-label-md text-label-md rounded-lg shadow-sm shrink-0" href="#">Book Hall</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Semester-Wise Study Notes & PYQ Repository -->
+<section class="hub-section mb-space-xl" id="notes-section">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-sm" id="pyq-archive">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">Academic Notes &amp; PYQ Repository</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Peer-reviewed lecture notes, formula digests, and solved previous year question banks.</p>
+</div>
+<!-- Contribution upload trigger -->
+<button class="inline-flex items-center gap-1.5 px-space-md py-2 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded-lg transition-colors self-start md:self-auto" onclick="alert('Submission portal open: upload markdown, scanned PDF, or solution manuals to earn peer contributor badges.')">
+<span class="material-symbols-outlined text-[18px] text-primary">upload_file</span>
+          Contribute Notes
+        </button>
+</div>
+<!-- Semester Selector Pills -->
+<div class="flex items-center gap-2 overflow-x-auto pb-space-sm mb-space-md no-scrollbar">
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline mr-2 shrink-0">Filter Semester:</span>
+<button class="sem-btn px-3 py-1 rounded-full font-label-md text-label-md bg-on-surface text-surface transition-colors" data-sem="all">All Semesters</button>
+<button class="sem-btn px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" data-sem="1">Sem 1</button>
+<button class="sem-btn px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" data-sem="2">Sem 2</button>
+<button class="sem-btn px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" data-sem="3">Sem 3</button>
+<button class="sem-btn px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" data-sem="4">Sem 4</button>
+<button class="sem-btn px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" data-sem="5">Sem 5</button>
+<button class="sem-btn px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" data-sem="6">Sem 6</button>
+<button class="sem-btn px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" data-sem="7">Sem 7</button>
+<button class="sem-btn px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" data-sem="8">Sem 8</button>
+</div>
+<!-- Notes Repository Strip Items -->
+<div class="flex flex-col gap-space-sm" id="notes-list">
+<!-- Item 1 -->
+<div class="note-card bg-surface-container-low hover:bg-surface-container rounded-lg p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md transition-all" data-sem-id="3">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">description</span>
+</div>
+<div class="min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm font-bold bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded">Sem 3</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">CS301: Data Structures &amp; Algorithms</span>
+<span class="inline-flex items-center gap-0.5 text-label-sm text-secondary font-bold">
+<span class="material-symbols-outlined text-[14px]">verified</span> Faculty Verified
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Full lecture annotations, recursion trees, sorting complexities + 5 years solved university PYQs with exam solutions.
+              </p>
+<div class="flex items-center gap-space-md mt-1 text-label-sm text-tertiary">
+<span>By Prof. H. Verma / Peer Squad</span>
+<span>•</span>
+<span>Downloads: 1,420</span>
+<span>•</span>
+<span>Updated Oct 2024</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-space-sm">
+<button class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-space-md py-2.5 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm transition-all" onclick="handleDownload(this, 'CS301_DSA_Complete.pdf')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+              Download PDF • 8.4MB
+            </button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="note-card bg-surface-container-low hover:bg-surface-container rounded-lg p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md transition-all" data-sem-id="4">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">draw</span>
+</div>
+<div class="min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm font-bold bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded">Sem 4</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">EC204: Signals and Systems</span>
+<span class="inline-flex items-center gap-0.5 text-label-sm text-secondary font-bold">
+<span class="material-symbols-outlined text-[14px]">star</span> Top Rated
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                High-resolution hand-written formula master sheet, Fourier/Laplace transformation transforms cheat-sheet, and midterm PYQ solutions.
+              </p>
+<div class="flex items-center gap-space-md mt-1 text-label-sm text-tertiary">
+<span>By Priya Sharma (EE Dept, Rank 2)</span>
+<span>•</span>
+<span>Downloads: 890</span>
+<span>•</span>
+<span>Updated Nov 2024</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-space-sm">
+<button class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-space-md py-2.5 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm transition-all" onclick="handleDownload(this, 'EC204_Signals_Formulas.pdf')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+              Download PDF • 4.1MB
+            </button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="note-card bg-surface-container-low hover:bg-surface-container rounded-lg p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md transition-all" data-sem-id="1">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[24px]">calculate</span>
+</div>
+<div class="min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm font-bold bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded">Sem 1</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">MA101: Linear Algebra &amp; Calculus</span>
+<span class="inline-flex items-center gap-0.5 text-label-sm text-tertiary font-bold">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span> First Year Core
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Complete solved question bank from 2019-2024 midterms and end-semester papers with step-by-step matrix eigenvalues proofs.
+              </p>
+<div class="flex items-center gap-space-md mt-1 text-label-sm text-tertiary">
+<span>By Math Club Academic Cell</span>
+<span>•</span>
+<span>Downloads: 3,120</span>
+<span>•</span>
+<span>Updated Dec 2024</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-space-sm">
+<button class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-space-md py-2.5 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm transition-all" onclick="handleDownload(this, 'MA101_Solved_Bank.pdf')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+              Download PDF • 6.2MB
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Peer-to-Peer Marketplace Grid -->
+<section class="hub-section mb-space-xl" id="marketplace-section">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md mb-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">Peer-to-Peer Student Marketplace</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Verified student-to-student exchange. Fair prices, on-campus handoffs, zero commissions.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-1.5 px-space-md py-2.5 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm transition-all" onclick="document.getElementById('post-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px]">add</span>
+          + Post a New Listing
+        </button>
+</div>
+</div>
+<!-- Marketplace Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Item Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300">
+<div>
+<div class="relative h-48 w-full rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Hardcover Fundamentals of Physics textbook resting neatly on a clean wooden study desk beside a notebook, coffee mug, and pencil, crisp daylight shot from a modern college dorm room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHGmyxYWCpoPp88zF9vIdDrdjCoW3AS6oozdsvEz1biX68MaHYtc9SFQ1PCmAl9Hixl5NKEgsQ034-SZFjWXilrktKUaoO_HGcTSSw8Wn3af_mRIquGrXGiDuHkqD95C_PUA8um5e32Jw7NFzJxAC8Ad1iQl6WloZf9uFJofIp___HByYbzq9NtIfyM05Oq7vRELzx9AzO55KgaYUEOg3MQXd-WZPQqjbBzWUByvwo"/>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-1 rounded-full font-headline-sm text-headline-sm font-bold text-primary shadow-sm">
+              $25 <span class="font-body-sm text-body-sm text-outline line-through ml-1">$90</span>
+</div>
+<div class="absolute bottom-3 left-3 bg-inverse-surface/85 text-inverse-on-surface px-2.5 py-0.5 rounded text-label-sm font-label-sm">
+              Condition: Great
+            </div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs line-clamp-1">
+            Fundamentals of Physics (Halliday &amp; Resnick, 10th Ed)
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">
+            Minimal highlighter markings, spine intact, includes digital companion key code (unused). Recommended for Phys 101/102.
+          </p>
+<div class="flex items-center justify-between gap-space-xs p-space-sm bg-surface-container-low rounded-lg mb-space-md">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-7 h-7 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-on-primary-fixed text-label-md shrink-0">AK</div>
+<div class="min-w-0">
+<div class="font-label-md text-label-md font-bold text-on-surface truncate">Arjun K.</div>
+<div class="font-label-sm text-label-sm text-tertiary">B.Tech Mech '26</div>
+</div>
+</div>
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 bg-surface-container-highest text-on-surface rounded-full text-label-sm font-label-sm font-bold shrink-0">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified_user</span> Verified
+            </span>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-md bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg rounded-lg transition-colors flex items-center justify-center gap-2" onclick="openContactModal('Arjun K.', 'Fundamentals of Physics (10th Ed)', '$25', 'West Campus Quad / Library steps')">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+          Contact Seller
+        </button>
+</div>
+<!-- Item Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300">
+<div>
+<div class="relative h-48 w-full rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="TI-84 Plus CE modern color screen graphing calculator displayed on a minimalist white engineering table with its protective slide case beside it, sharp clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwxrlkRkkeoK_6AL8MWZ4GxqDLHRK7XRbPc_Y7cgQUJbgqwKroxdfB6VG5MM4uWUJj608V7q_y6HWYLRpXfUr2RuDX2JoKDvwCdakJC4ilCJ8c7EketRCE4-q8fs7pWefsVjHfRGhhOAKiYV7EDSuC-aRFuc7XaqnAPA9UPfiqPBIuHIEDxF-NY3TKu6VcZrbvl1roFTjGaqp6ttXxEu1IBNY57bt5us8gUCws00MH"/>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-1 rounded-full font-headline-sm text-headline-sm font-bold text-primary shadow-sm">
+              $65 <span class="font-body-sm text-body-sm text-outline line-through ml-1">$130</span>
+</div>
+<div class="absolute bottom-3 left-3 bg-inverse-surface/85 text-inverse-on-surface px-2.5 py-0.5 rounded text-label-sm font-label-sm">
+              Condition: Like New
+            </div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs line-clamp-1">
+            TI-84 Plus CE Graphing Calculator
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">
+            Rechargeable battery, color display, comes with charging cable and original sliding plastic shell. Ready for SAT/AP/Calculus courses.
+          </p>
+<div class="flex items-center justify-between gap-space-xs p-space-sm bg-surface-container-low rounded-lg mb-space-md">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-on-secondary-fixed text-label-md shrink-0">SL</div>
+<div class="min-w-0">
+<div class="font-label-md text-label-md font-bold text-on-surface truncate">Sarah L.</div>
+<div class="font-label-sm text-label-sm text-tertiary">Mathematics '25</div>
+</div>
+</div>
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 bg-surface-container-highest text-on-surface rounded-full text-label-sm font-label-sm font-bold shrink-0">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified_user</span> Verified
+            </span>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-md bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg rounded-lg transition-colors flex items-center justify-center gap-2" onclick="openContactModal('Sarah L.', 'TI-84 Plus CE Graphing Calculator', '$65', 'North Commons Cafe')">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+          Contact Seller
+        </button>
+</div>
+<!-- Item Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300">
+<div>
+<div class="relative h-48 w-full rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Modern adjustable matte black LED desk lamp glowing softly next to an organized bamboo desk organizer holding pens, sticky notes, and paperclips in a student apartment setup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2_uIcniz0YyjkuRAEUShlTDepFAfHl_u1ViymyHrO4nsBwFUoSnHM5xZc5PFcHQ-9vsz9rX_eKXfhURoCMPQRmE184hsAC0Ys1F4Ylg5_a7ndwYgAcOHq_XJjFdzzV-dVfLeSBQMYj25HVo6o8t2hhLlBXEiUPPbIiMywlMSNVqEzvDBbm-pI67Z_7JCBDTasxuFy8lOd3MLIYG4TQH9qWaJQHincf736BUpMW9s0"/>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-1 rounded-full font-headline-sm text-headline-sm font-bold text-primary shadow-sm">
+              $15 <span class="font-body-sm text-body-sm text-outline line-through ml-1">$45</span>
+</div>
+<div class="absolute bottom-3 left-3 bg-inverse-surface/85 text-inverse-on-surface px-2.5 py-0.5 rounded text-label-sm font-label-sm">
+              Condition: Good
+            </div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs line-clamp-1">
+            Ergonomic Study Lamp &amp; Organizer
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">
+            3 color temperatures, USB output charging port built into the base, includes 4-compartment bamboo organizer box.
+          </p>
+<div class="flex items-center justify-between gap-space-xs p-space-sm bg-surface-container-low rounded-lg mb-space-md">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed flex items-center justify-center font-bold text-on-tertiary-fixed text-label-md shrink-0">DM</div>
+<div class="min-w-0">
+<div class="font-label-md text-label-md font-bold text-on-surface truncate">David M.</div>
+<div class="font-label-sm text-label-sm text-tertiary">Architecture '27</div>
+</div>
+</div>
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 bg-surface-container-highest text-on-surface rounded-full text-label-sm font-label-sm font-bold shrink-0">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified_user</span> Verified
+            </span>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-md bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg rounded-lg transition-colors flex items-center justify-center gap-2" onclick="openContactModal('David M.', 'Ergonomic Study Lamp &amp; Organizer', '$15', 'Architecture Studio Lobby')">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+          Contact Seller
+        </button>
+</div>
+</div>
+</section>
+<!-- Interactive Trust Banner / Safety Tips -->
+<div class="w-full bg-surface-container rounded-xl p-space-lg mb-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">shield</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Campus Connect Safety Commitment</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">All sellers authenticate with valid .edu credentials. Always arrange exchanges in public campus areas.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-md text-label-md text-on-surface-variant bg-surface-container-lowest px-3 py-1 rounded-full">Safe Exchange: Student Union Hall</span>
+</div>
+</div>
+<!-- MODAL: Contact Seller -->
+<div class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden flex items-center justify-center p-4" id="contact-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-md w-full p-space-lg shadow-xl relative animate-in fade-in duration-200">
+<button class="absolute top-4 right-4 p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="document.getElementById('contact-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="flex items-center gap-space-sm mb-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined text-[20px]">forum</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Message Student Seller</h3>
+<p class="font-body-sm text-body-sm text-tertiary" id="modal-seller-info">Arjun K. • Fundamentals of Physics</p>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md">
+<div class="flex items-center justify-between text-label-sm font-label-sm mb-1">
+<span class="text-tertiary">Listed Price:</span>
+<span class="font-bold text-primary" id="modal-price">$25</span>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-tertiary">Suggested Meetup:</span>
+<span class="font-bold text-on-surface" id="modal-location">Campus Quad</span>
+</div>
+</div>
+<form class="flex flex-col gap-space-sm" onsubmit="handleSendBuyerMessage(event)">
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1">Your Proposed Offer / Note</label>
+<textarea class="w-full p-2.5 bg-surface-container-lowest text-on-surface rounded-lg text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="buyer-note" placeholder="Hey! I'm interested in buying this today. Can we meet near the library?" rows="3"></textarea>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-4 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="document.getElementById('contact-modal').classList.add('hidden')" type="button">
+            Cancel
+          </button>
+<button class="px-space-md py-2 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm transition-all" type="submit">
+            Send Encrypted Message
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- MODAL: Post a New Listing -->
+<div class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden flex items-center justify-center p-4" id="post-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg md:p-space-xl shadow-xl relative max-h-[90vh] overflow-y-auto">
+<button class="absolute top-4 right-4 p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" onclick="document.getElementById('post-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="flex items-center gap-space-sm mb-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary font-bold">
+<span class="material-symbols-outlined text-[20px]">post_add</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Create Marketplace Listing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Post books, lab kits, gadgets, or stationery for fellow students.</p>
+</div>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="handleCreateListing(event)">
+<div>
+<label class="block font-label-lg text-label-lg font-bold text-on-surface mb-1">Item Title *</label>
+<input class="w-full px-3 py-2 bg-surface-container-low rounded-lg text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="e.g. Organic Chemistry Model Kit (Molymod)" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-lg text-label-lg font-bold text-on-surface mb-1">Asking Price ($) *</label>
+<input class="w-full px-3 py-2 bg-surface-container-low rounded-lg text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="20" required="" type="number"/>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg font-bold text-on-surface mb-1">Category *</label>
+<select class="w-full px-3 py-2 bg-surface-container-low rounded-lg text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm">
+<option>Textbooks &amp; Notes</option>
+<option>Calculators &amp; Electronics</option>
+<option>Lab Gear &amp; Drafting Kits</option>
+<option>Dorm &amp; Study Furniture</option>
+<option>Cycles &amp; Mobility</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg font-bold text-on-surface mb-1">Condition</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="flex items-center gap-2 p-2 bg-surface-container-low rounded-lg text-label-md cursor-pointer hover:bg-surface-container">
+<input checked="" class="accent-primary" name="cond" type="radio"/> Like New
+            </label>
+<label class="flex items-center gap-2 p-2 bg-surface-container-low rounded-lg text-label-md cursor-pointer hover:bg-surface-container">
+<input class="accent-primary" name="cond" type="radio"/> Good
+            </label>
+<label class="flex items-center gap-2 p-2 bg-surface-container-low rounded-lg text-label-md cursor-pointer hover:bg-surface-container">
+<input class="accent-primary" name="cond" type="radio"/> Fair
+            </label>
+</div>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg font-bold text-on-surface mb-1">Campus Meetup Location</label>
+<input class="w-full px-3 py-2 bg-surface-container-low rounded-lg text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="e.g. Central Library Ground Floor" type="text"/>
+</div>
+<div class="p-3 bg-secondary-fixed/30 rounded-lg text-body-sm text-on-surface-variant flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">info</span>
+<span>Your university email will be automatically linked to this listing for verification.</span>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-4 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="document.getElementById('post-modal').classList.add('hidden')" type="button">
+            Cancel
+          </button>
+<button class="px-space-lg py-2.5 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold rounded-lg shadow-sm transition-all" type="submit">
+            Publish Listing
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Toast Notification Node -->
+<div class="fixed bottom-6 right-6 z-50 bg-inverse-surface text-inverse-on-surface px-space-md py-3 rounded-lg shadow-xl translate-y-24 opacity-0 transition-all duration-300 flex items-center gap-space-sm" id="hub-toast">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-label-lg text-label-lg" id="toast-text">Action executed successfully</span>
+</div>
+</div>
+<script>
+  // Filter tabs behavior
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  const sections = {
+    clubs: document.getElementById('clubs-section'),
+    hackathons: document.getElementById('hackathons-section'),
+    notes: document.getElementById('notes-section'),
+    marketplace: document.getElementById('marketplace-section')
+  };
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabButtons.forEach(b => {
+        b.className = 'tab-btn px-4 py-2 rounded-full font-label-lg text-label-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all';
+      });
+      btn.className = 'tab-btn px-4 py-2 rounded-full font-label-lg text-label-lg bg-primary text-on-primary shadow-sm transition-all';
+
+      const target = btn.getAttribute('data-target');
+      if (target === 'all') {
+        Object.values(sections).forEach(s => s && s.classList.remove('hidden'));
+      } else {
+        Object.entries(sections).forEach(([key, section]) => {
+          if (!section) return;
+          if (key === target) {
+            section.classList.remove('hidden');
+          } else {
+            section.classList.add('hidden');
+          }
+        });
+      }
+    });
+  });
+
+  // Semester Filter Buttons for Academic Repository
+  const semButtons = document.querySelectorAll('.sem-btn');
+  const noteCards = document.querySelectorAll('.note-card');
+
+  semButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      semButtons.forEach(b => {
+        b.className = 'sem-btn px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors';
+      });
+      btn.className = 'sem-btn px-3 py-1 rounded-full font-label-md text-label-md bg-on-surface text-surface transition-colors';
+
+      const selectedSem = btn.getAttribute('data-sem');
+      noteCards.forEach(card => {
+        if (selectedSem === 'all' || card.getAttribute('data-sem-id') === selectedSem) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  // Keyword live filter
+  const filterInput = document.getElementById('hub-keyword-filter');
+  if (filterInput) {
+    filterInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      const allCards = document.querySelectorAll('.hub-section h3, .hub-section h4');
+      allCards.forEach(header => {
+        const parentCard = header.closest('.group, .note-card, .lg\\:col-span-7, .rounded-xl');
+        if (!parentCard) return;
+        if (!query || parentCard.innerText.toLowerCase().includes(query)) {
+          parentCard.style.opacity = '1';
+          parentCard.style.filter = 'none';
+        } else {
+          parentCard.style.opacity = '0.25';
+          parentCard.style.filter = 'grayscale(1)';
+        }
+      });
+    });
+  }
+
+  // Toast helper
+  function triggerToast(message, icon = 'check_circle') {
+    const toast = document.getElementById('hub-toast');
+    const toastText = document.getElementById('toast-text');
+    const toastIcon = document.getElementById('toast-icon');
+    if (!toast || !toastText) return;
+    toastText.textContent = message;
+    toastIcon.textContent = icon;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  }
+
+  // Club Join interaction
+  function handleJoinClub(button, clubName) {
+    if (button.dataset.joined === 'true') {
+      button.textContent = 'Join Club';
+      button.className = 'flex-1 py-2.5 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm transition-all active:scale-[0.98]';
+      button.dataset.joined = 'false';
+      triggerToast(`Left ${clubName} membership list.`, 'info');
+    } else {
+      button.textContent = 'Joined ✓';
+      button.className = 'flex-1 py-2.5 px-space-md bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded-lg shadow-sm transition-all';
+      button.dataset.joined = 'true';
+      triggerToast(`Welcome to ${clubName}! Orientation invite sent to student email.`, 'verified');
+    }
+  }
+
+  // RSVP interaction
+  function handleEventRSVP(btn, eventName) {
+    btn.textContent = 'Registered ✓';
+    btn.disabled = true;
+    btn.classList.add('opacity-75', 'cursor-default');
+    triggerToast(`Confirmed RSVP for ${eventName}. Ticket saved to student pass!`, 'bookmark_added');
+  }
+
+  // Download simulation
+  function handleDownload(btn, filename) {
+    const originalText = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span> Fetching...`;
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">done</span> Saved!`;
+      triggerToast(`Download ready: ${filename}`, 'download_done');
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+      }, 2500);
+    }, 700);
+  }
+
+  // Modal contact open
+  function openContactModal(seller, item, price, location) {
+    document.getElementById('modal-seller-info').textContent = `${seller} • ${item}`;
+    document.getElementById('modal-price').textContent = price;
+    document.getElementById('modal-location').textContent = location;
+    document.getElementById('contact-modal').classList.remove('hidden');
+  }
+
+  function handleSendBuyerMessage(e) {
+    e.preventDefault();
+    document.getElementById('contact-modal').classList.add('hidden');
+    triggerToast('Encrypted student DM transmitted to seller inbox.', 'send');
+    document.getElementById('buyer-note').value = '';
+  }
+
+  function handleCreateListing(e) {
+    e.preventDefault();
+    document.getElementById('post-modal').classList.add('hidden');
+    triggerToast('Listing posted! Visible after rapid campus safety scan.', 'publish');
+  }
+
+  // Live countdown ticker simulation
+  setInterval(() => {
+    const secEl = document.getElementById('count-secs');
+    if (!secEl) return;
+    let s = parseInt(secEl.textContent, 10);
+    if (isNaN(s)) return;
+    if (s > 0) {
+      secEl.textContent = (s - 1).toString().padStart(2, '0');
+    } else {
+      secEl.textContent = '59';
+    }
+  }, 1000);
+</script></div></main><footer class="w-full bg-inverse-surface text-inverse-on-surface"><div class="max-w-[1280px] mx-auto px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm mb-space-xs"><span class="font-headline-md text-headline-md text-inverse-on-surface font-bold">Campus Connect</span></div><p class="font-body-sm text-body-sm text-surface-variant leading-relaxed">Empowering campus life, uniting student clubs, peer study groups, and campus resources under one roof.</p></div><div class="flex flex-col gap-space-sm"><h3 class="font-headline-sm text-headline-sm text-inverse-on-surface font-bold mb-space-xs">Quick Links</h3><ul class="flex flex-col gap-space-xs"><li class="font-body-sm text-body-sm text-surface-variant hover:text-inverse-on-surface transition-colors"><a data-path="student-erp" href="#">Student ERP</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-inverse-on-surface transition-colors"><a data-path="digital-library" href="#">Digital Library</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-inverse-on-surface transition-colors"><a data-path="academic-calendar" href="#">Academic Calendar</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-inverse-on-surface transition-colors"><a data-path="campus-map" href="#">Campus Map</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-headline-sm text-headline-sm text-inverse-on-surface font-bold mb-space-xs">Services</h3><ul class="flex flex-col gap-space-xs"><li class="font-body-sm text-body-sm text-surface-variant hover:text-inverse-on-surface transition-colors"><a data-path="campus-forums" href="#">Campus Forums</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-inverse-on-surface transition-colors"><a data-path="lost-and-found" href="#">Lost &amp; Found</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-inverse-on-surface transition-colors"><a data-path="study-groups" href="#">Study Groups</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-inverse-on-surface transition-colors"><a data-path="marketplace" href="#">Marketplace</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-headline-sm text-headline-sm text-inverse-on-surface font-bold mb-space-xs">Contact Support</h3><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-variant"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">mail</span><span>support@campusconnect.edu</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">location_on</span><span>Student Affairs Hall B</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">call</span><span>Emergency Helpline: +1 800-555-CAMP</span></div></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-surface-dim">© 2025 Campus Connect. All student rights reserved.</p><div class="flex items-center gap-space-md"><a class="font-label-sm text-label-sm text-surface-dim hover:text-inverse-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="font-label-sm text-label-sm text-surface-dim hover:text-inverse-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a></div></div></div></footer></body></html>

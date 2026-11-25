@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-error-container": "#93000a",
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed-variant": "#3f465c",
+          "primary-fixed-dim": "#ffb599",
+          "secondary-fixed-dim": "#ffb95f",
+          "on-primary-container": "#fffbff",
+          "on-secondary": "#ffffff",
+          "inverse-surface": "#213145",
+          "primary-container": "#cc4900",
+          "surface-container": "#e5eeff",
+          "error": "#ba1a1a",
+          "tertiary-fixed-dim": "#bec6e0",
+          "secondary": "#855300",
+          "inverse-on-surface": "#eaf1ff",
+          "secondary-container": "#fea619",
+          "on-background": "#0b1c30",
+          "surface-container-highest": "#d3e4fe",
+          "on-surface": "#0b1c30",
+          "on-primary": "#ffffff",
+          "on-surface-variant": "#5a4138",
+          "surface-container-high": "#dce9ff",
+          "on-tertiary": "#ffffff",
+          "surface-tint": "#a73a00",
+          "primary-fixed": "#ffdbce",
+          "primary": "#a33900",
+          "on-tertiary-fixed": "#131b2e",
+          "surface-dim": "#cbdbf5",
+          "on-tertiary-container": "#fefcff",
+          "outline": "#8e7166",
+          "surface-container-low": "#eff4ff",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-container": "#684000",
+          "secondary-fixed": "#ffddb8",
+          "surface-variant": "#d3e4fe",
+          "on-error": "#ffffff",
+          "on-primary-fixed-variant": "#7f2b00",
+          "surface": "#f8f9ff",
+          "tertiary-fixed": "dae2fd",
+          "inverse-primary": "#ffb599",
+          "on-secondary-fixed-variant": "#653e00",
+          "background": "#f8f9ff",
+          "surface-bright": "#f8f9ff",
+          "on-secondary-fixed": "#2a1700",
+          "on-primary-fixed": "#370e00",
+          "outline-variant": "#e2bfb2",
+          "tertiary-container": "#6c748b",
+          "tertiary": "#545c72"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-mobile": "1rem",
+          "space-sm": "0.5rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "gutter": "1.5rem",
+          "gutter-mobile": "1rem",
+          "space-lg": "1.5rem",
+          "margin": "2rem",
+          "space-xl": "2.5rem"
+        },
+        "fontFamily": {
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-sm": [
+            "1.125rem",
+            {
+              "lineHeight": "1.5rem",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl": [
+            "2.25rem",
+            {
+              "lineHeight": "2.75rem",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "1rem",
+            {
+              "lineHeight": "1.5rem",
+              "fontWeight": "400"
+            }
+          ],
+          "label-lg": [
+            "0.875rem",
+            {
+              "lineHeight": "1.25rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "0.6875rem",
+            {
+              "lineHeight": "0.875rem",
+              "letterSpacing": "0.05em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.025em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "2rem",
+            {
+              "lineHeight": "2.5rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "body-sm": [
+            "0.875rem",
+            {
+              "lineHeight": "1.25rem",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "3rem",
+            {
+              "lineHeight": "3.5rem",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-md": [
+            "1.25rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.75rem",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "1.75rem",
+            {
+              "lineHeight": "2.25rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><img alt="Campus Connect Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrD4IPFQZcBCy5M4-WLA7PMDQNvUTxJGKMGqb-fgaeu4W24Uq2QBkahWNYViumOXjyt4i0k_e1NEzS591thi5SQAm0zzBDC7oBcQwrGrzI9m8m5ToUFaht9tPro4CKesnckoHNV0A_AD5cRQ9AmVuy9Obn5EPkrw2JldwYorEcC2pFefJwtva34922SOYU88L5vXuCgAaHZdXxWXgihpYRKtdUmy60Ol2g6Pqbm6nKgJsQ"/><span class="font-headline-md text-headline-md text-on-surface tracking-tight font-bold">Campus Connect</span></div><div class="hidden xl:flex items-center flex-1 max-w-xs mx-space-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-4 py-2 bg-surface-container-lowest text-on-surface placeholder:text-outline text-label-md font-label-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Search clubs, events, notes..." type="text"/></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors text-primary font-bold" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="#">Services</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="login" href="#">Login</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact-us" href="#">Contact Us</a></nav><div class="flex items-center gap-space-md shrink-0"><button aria-label="Notifications" class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-primary rounded-full ring-2 ring-surface"></span></button><a class="hidden sm:inline-flex items-center justify-center px-space-md py-2 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg transition-colors shadow-sm" data-path="register" href="#">Register Now</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="max-w-[1280px] mx-auto px-margin py-space-lg"><div class="flex flex-col w-full gap-space-xl">
+<!-- Hero Section -->
+<section class="relative w-full rounded-2xl bg-surface-container-lowest shadow-md overflow-hidden p-space-xl lg:p-12 text-center flex flex-col items-center justify-center">
+<!-- Atmospheric subtle ambient radial glow -->
+<div class="absolute -top-24 -left-20 w-80 h-80 rounded-full bg-secondary-container/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -right-20 w-96 h-96 rounded-full bg-primary-fixed-dim/20 blur-3xl pointer-events-none"></div>
+<!-- Editorial Accent Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container text-on-surface mb-space-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Fall Semester 2025 • Active Portal</span>
+</div>
+<!-- Main Greeting Headline -->
+<h1 class="font-display-lg text-display-lg text-on-surface max-w-4xl tracking-tight leading-tight mb-space-md">
+      Connecting You to Campus Life
+    </h1>
+<!-- Subheadline -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed mb-space-lg">
+      Explore student clubs, discover upcoming campus events, join peer study circles, and access university resources in one unified hub.
+    </p>
+<!-- Quick Action / Trending Topic Pills -->
+<div class="flex flex-wrap items-center justify-center gap-space-sm pt-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold flex items-center gap-1 mr-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">trending_up</span>
+        Trending:
+      </span>
+<a class="inline-flex items-center px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container hover:text-primary transition-all shadow-sm" href="#">
+        #Hackathon2025
+      </a>
+<a class="inline-flex items-center px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container hover:text-primary transition-all shadow-sm" href="#">
+        Robotics Workshop
+      </a>
+<a class="inline-flex items-center px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container hover:text-primary transition-all shadow-sm" href="#">
+        Finals Prep Group
+      </a>
+<a class="inline-flex items-center px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container hover:text-primary transition-all shadow-sm" href="#">
+        Dorm Exchange
+      </a>
+</div>
+</section>
+<!-- Section: Campus Connections & Activities (4-Column Feature Grid) -->
+<section class="flex flex-col gap-space-lg w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Get Involved</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">Campus Connections &amp; Activities</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+        Live extracurricular feeds, open interest chapters, and peer support networks synchronized in real-time.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter w-full">
+<!-- Card 1: Join Student Clubs -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 p-space-lg group relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary-container"></div>
+<div class="flex flex-col">
+<!-- Badges Row -->
+<div class="flex items-center justify-between gap-space-xs mb-space-md">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">
+              Social
+            </span>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-xs">
+              18 Active Clubs
+            </span>
+</div>
+<!-- Feature Image -->
+<div class="relative w-full h-36 rounded-xl overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dynamic group of diverse university students collaborating in a high-tech robotics and social club workshop room, warm ambient daylight, smiling energetic expressions, collegiate warmth and technology books in background, warm amber and navy accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzm6ceEG5xKAWZB5tdvtUFPD_oKCV92tc1FuB1xfq_ux85KRatM_AbRW4XuxFPCxyRXoULHuCbVW_qGWPJXGJhlCwUA48PZT7VtnRb10DzgIG8yv7jhcBBA7xzsNZ9BlXmw7PLUuXlAXRxDK5EQw5GxKZbZp-NWEqgP-EtHayuZqHg5Ck0AaU0AEEPG4eZ38iamB5cLOJv81ZPwrsTfxO7W35NiirqJXrRd0wSjIwk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent"></div>
+<div class="absolute bottom-2 left-2 text-surface-container-lowest flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">groups</span>
+<span>Student Societies</span>
+</div>
+</div>
+<!-- Headline & Description -->
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight mb-space-xs group-hover:text-primary transition-colors">
+            Student Clubs &amp; Societies
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-lg">
+            Find your community across tech, cultural, debate, robotics, and varsity sports clubs.
+          </p>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<a class="flex-1 py-2 px-space-sm text-center rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md font-bold transition-colors" href="#">
+            Explore
+          </a>
+<a class="flex-1 py-2 px-space-sm text-center rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold transition-colors shadow-sm" href="#">
+            Join
+          </a>
+</div>
+</div>
+<!-- Card 2: Upcoming Campus Events -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 p-space-lg group relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-secondary to-primary"></div>
+<div class="flex flex-col">
+<!-- Badges Row -->
+<div class="flex items-center justify-between gap-space-xs mb-space-md">
+<div class="flex items-center gap-1">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">
+                Academic
+              </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">
+                Social
+              </span>
+</div>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold shadow-xs">
+              Next: Nov 28
+            </span>
+</div>
+<!-- Feature Image -->
+<div class="relative w-full h-36 rounded-xl overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant campus auditorium tech symposium and night cultural celebration, student presenters on illuminated stage with digital backdrop, deep navy atmosphere with warm golden rim lighting and enthusiastic audience" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8dZlEWW1lO1O_-EG5AKWlhCUB7nFTIgT5hSVaT6Su9WxSsNzkDD8SjX1jq_U_9BfWI9EORD8swrwCw2rV6kDTTDlN72fqE2ZaFGInklokH-ULKz4ghvIMqz6x3uz__0NllrRNmU3DBtt3-kRtqNlEhyvU4V7c2Esw3Gmju2mWDtrXqN7MktTMDQqvE8qFbptlLK_wYNQ6v3cazOiNkt8HgJI0BWiAUbmSFcnYTDOk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent"></div>
+<div class="absolute bottom-2 left-2 text-surface-container-lowest flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">celebration</span>
+<span>Main Auditorium</span>
+</div>
+</div>
+<!-- Headline & Description -->
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight mb-space-xs group-hover:text-primary transition-colors">
+            Annual Tech Fest &amp; Cultural Nights
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-lg">
+            RSVP to guest lectures, hackathons, open mic nights, and inter-college tournaments.
+          </p>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<a class="flex-1 py-2 px-space-sm text-center rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md font-bold transition-colors" href="#">
+            View Details
+          </a>
+<a class="flex-1 py-2 px-space-sm text-center rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold transition-colors shadow-sm" href="#">
+            Register
+          </a>
+</div>
+</div>
+<!-- Card 3: Peer Study Groups -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 p-space-lg group relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-tertiary to-primary-fixed-dim"></div>
+<div class="flex flex-col">
+<!-- Badges Row -->
+<div class="flex items-center justify-between gap-space-xs mb-space-md">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">
+              Study Hub
+            </span>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold shadow-xs">
+              420+ Resources
+            </span>
+</div>
+<!-- Feature Image -->
+<div class="relative w-full h-36 rounded-xl overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern university library study commons, students gathered around wooden tables with open notebooks, laptops, annotated code charts, warm sunlight streaming through large campus windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9fR9gwr9bKC4jXn0-fwkM2NiicArcVVOgV5ewb-KCbrVtDhqhGn-9C06K7Y6tzVYa6TXGHvNVJ4qg0E0yH8zg2pPkpSqarJM8iFOxW1CUIuiZ1Sk8EYuw81smcwGD8y5rxoGcvUAH9OCNI4i_BspifU8wHJMFtkFNDatw-o2nyRDuRmCnELO01we7EhW23zY6XViIWKHtGCTx6gokQmcGSOzdFqEN1DcezLorv5-K"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent"></div>
+<div class="absolute bottom-2 left-2 text-surface-container-lowest flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>Library Wing B</span>
+</div>
+</div>
+<!-- Headline & Description -->
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight mb-space-xs group-hover:text-primary transition-colors">
+            Peer Study &amp; Resource Hub
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-lg">
+            Collaborate on past year question papers, lab notes, and peer tutoring sessions.
+          </p>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<a class="flex-1 py-2 px-space-sm text-center rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md font-bold transition-colors" href="#">
+            Join
+          </a>
+<a class="flex-1 py-2 px-space-sm text-center rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold transition-colors shadow-sm" href="#">
+            Find Peer
+          </a>
+</div>
+</div>
+<!-- Card 4: Campus Marketplace -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 p-space-lg group relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-secondary-container to-secondary"></div>
+<div class="flex flex-col">
+<!-- Badges Row -->
+<div class="flex items-center justify-between gap-space-xs mb-space-md">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">
+              Academic
+            </span>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-xs">
+              35 New Listings
+            </span>
+</div>
+<!-- Feature Image -->
+<div class="relative w-full h-36 rounded-xl overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Neat flatlay arrangement of university course materials including engineering textbooks, scientific calculators, pristine drawing tools, and college stationery on clean surface, warm natural studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRQTYyzmV71eS5Vqp-INUBarUDWW38-XKM3qIHeAjCG_9WojYirnSSaBCmw1rAY5jWag41esUgSHMYQBsRD7Qxf4zZxdAVaV1O4C5Qg67bE3r2Z6EjeOGFxoYq7KyHftq-O2Rmfm1OIQxKxT_PxaAeSXR2disPPu9O2O-7ebbE5BGSmpyLjI5lS580RpZKAGme25poajldbSRGOEEtQ_S4QMxSNGyG6WDxzTxfab8E"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent"></div>
+<div class="absolute bottom-2 left-2 text-surface-container-lowest flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">storefront</span>
+<span>Verified Listings</span>
+</div>
+</div>
+<!-- Headline & Description -->
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight mb-space-xs group-hover:text-primary transition-colors">
+            Student Marketplace &amp; Exchange
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-lg">
+            Buy and sell verified textbooks, lab kits, graphing calculators, and dorm essentials.
+          </p>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<a class="flex-1 py-2 px-space-sm text-center rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md font-bold transition-colors" href="#">
+            Browse
+          </a>
+<a class="flex-1 py-2 px-space-sm text-center rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold transition-colors shadow-sm" href="#">
+            Explore
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Section: Campus Hub & Updates (4-Column Layout) -->
+<section class="flex flex-col gap-space-md w-full">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[28px]">dashboard</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Campus Hub &amp; Live Updates</h2>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant hidden sm:inline-flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+        Synchronized with Dean of Student Affairs Office
+      </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter items-start w-full">
+<!-- Column 1: Latest Updates & Notice Board -->
+<div class="flex flex-col bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg h-full">
+<!-- Header & Category Filter -->
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">campaign</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Notice Board</h3>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Live</span>
+</div>
+<!-- Filter Pills -->
+<div class="flex items-center gap-1 overflow-x-auto pb-space-xs mb-space-md no-scrollbar" id="notice-filter-group">
+<button class="notice-filter px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shrink-0 transition-colors" data-target="all" type="button">All</button>
+<button class="notice-filter px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm shrink-0 hover:bg-surface-container-high transition-colors" data-target="cs" type="button">CS Dept</button>
+<button class="notice-filter px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm shrink-0 hover:bg-surface-container-high transition-colors" data-target="1st" type="button">1st Year</button>
+<button class="notice-filter px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm shrink-0 hover:bg-surface-container-high transition-colors" data-target="mech" type="button">Mech</button>
+</div>
+<!-- Downloadable PDF Notice List -->
+<div class="flex flex-col gap-space-sm flex-1">
+<!-- Item 1 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start justify-between gap-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">picture_as_pdf</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold leading-snug">End-Sem Exam Schedules - Autumn 2025</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PDF • 2.4 MB • Today</span>
+</div>
+</div>
+<button aria-label="Download notice" class="p-1.5 rounded-lg text-primary hover:bg-primary-fixed transition-colors shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<!-- Item 2 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start justify-between gap-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">picture_as_pdf</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold leading-snug">Inter-College Fest Registration Extended</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PDF • 1.1 MB • Yesterday</span>
+</div>
+</div>
+<button aria-label="Download notice" class="p-1.5 rounded-lg text-primary hover:bg-primary-fixed transition-colors shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<!-- Item 3 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start justify-between gap-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">picture_as_pdf</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold leading-snug">National Merit Scholarship Forms</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PDF • 850 KB • 2 days ago</span>
+</div>
+</div>
+<button aria-label="Download notice" class="p-1.5 rounded-lg text-primary hover:bg-primary-fixed transition-colors shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<!-- Item 4 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start justify-between gap-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">picture_as_pdf</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold leading-snug">Hostel Room Allotment Phase II Results</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PDF • 1.8 MB • Oct 24</span>
+</div>
+</div>
+<button aria-label="Download notice" class="p-1.5 rounded-lg text-primary hover:bg-primary-fixed transition-colors shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-1 font-label-md text-label-md text-primary font-bold pt-space-md hover:underline mt-auto" href="#">
+<span>View All Campus Notices</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Column 2: Quick Links Directory -->
+<div class="flex flex-col bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg h-full">
+<div class="flex items-center gap-2 mb-space-md">
+<span class="material-symbols-outlined text-primary text-[22px]">apps</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Quick Links</h3>
+</div>
+<div class="grid grid-cols-1 gap-space-xs flex-1">
+<!-- ERP -->
+<a class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-between group transition-all" href="#">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Student Portal (ERP)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Attendance &amp; Grades</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all text-[18px]">chevron_right</span>
+</a>
+<!-- Digital Library -->
+<a class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-between group transition-all" href="#">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">local_library</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Digital Library</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Journals &amp; E-Books</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all text-[18px]">chevron_right</span>
+</a>
+<!-- Campus Forums -->
+<a class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-between group transition-all" href="#">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">forum</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Campus Forums</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Discussions &amp; Q&amp;A</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all text-[18px]">chevron_right</span>
+</a>
+<!-- Lost & Found -->
+<a class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-between group transition-all" href="#">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest text-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">travel_explore</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Lost &amp; Found</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Claims &amp; Returns</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all text-[18px]">chevron_right</span>
+</a>
+<!-- Grievance Desk -->
+<a class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-between group transition-all" href="#">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Grievance Desk</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Confidential Support</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all text-[18px]">chevron_right</span>
+</a>
+<!-- Campus Map -->
+<a class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-between group transition-all" href="#">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">map</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Campus Map &amp; Navigation</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Halls &amp; Labs Route</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Column 3: Active Collaborations (Teammate Finder) -->
+<div class="flex flex-col bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg h-full">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">handshake</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Teammate Finder</h3>
+</div>
+<a class="font-label-sm text-label-sm text-secondary font-bold hover:underline" href="#">Post +</a>
+</div>
+<div class="flex flex-col gap-space-sm flex-1">
+<!-- Item 1 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">UX Designer for Hackathon</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">12m ago</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-fixed-dim text-on-primary-fixed flex items-center justify-center font-bold text-[10px]">PS</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Priya S. (3rd Yr CS)</span>
+</div>
+<button class="px-2.5 py-1 rounded-lg bg-secondary-container hover:bg-secondary text-on-secondary font-label-sm text-label-sm font-bold transition-colors" type="button">
+                Connect
+              </button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">PyTorch Peer Study</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1h ago</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-[10px]">AM</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Alex M. (Data Sci)</span>
+</div>
+<button class="px-2.5 py-1 rounded-lg bg-secondary-container hover:bg-secondary text-on-secondary font-label-sm text-label-sm font-bold transition-colors" type="button">
+                Connect
+              </button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Guitarist for Battle of Bands</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3h ago</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-[10px]">BC</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Campus Band Club</span>
+</div>
+<button class="px-2.5 py-1 rounded-lg bg-secondary-container hover:bg-secondary text-on-secondary font-label-sm text-label-sm font-bold transition-colors" type="button">
+                Connect
+              </button>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Embedded C Lab Partner</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5h ago</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold text-[10px]">RK</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rohan K. (ECE)</span>
+</div>
+<button class="px-2.5 py-1 rounded-lg bg-secondary-container hover:bg-secondary text-on-secondary font-label-sm text-label-sm font-bold transition-colors" type="button">
+                Connect
+              </button>
+</div>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-1 font-label-md text-label-md text-secondary font-bold pt-space-md hover:underline mt-auto" href="#">
+<span>Browse All 48 Requests</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Column 4: Platform Stats & Student Highlights -->
+<div class="flex flex-col gap-space-md h-full">
+<!-- Top Card: Student Testimonial Quote -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-md flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center gap-space-xs text-secondary-container mb-2">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic leading-relaxed mb-space-sm">
+            “Campus Connect made finding hackathon teammates effortless! Within 2 hours our AI team was complete and won 2nd prize.”
+          </p>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold text-label-sm">
+              MT
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Maya T.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Batch ’26 • CSE</span>
+</div>
+</div>
+</div>
+<!-- Bottom Card: High Impact Bold Metrics -->
+<div class="bg-inverse-surface text-inverse-on-surface rounded-2xl shadow-md p-space-lg flex flex-col justify-between flex-1 relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 rounded-full bg-secondary-container/20 blur-2xl"></div>
+<div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-highest/20 text-secondary-fixed font-label-sm text-label-sm font-bold mb-space-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-pulse"></span>
+              Verified Community
+            </div>
+<div class="flex flex-col gap-space-md">
+<div>
+<span class="font-display-lg text-display-lg font-bold text-secondary-fixed leading-none">1,200+</span>
+<p class="font-label-md text-label-md text-surface-variant mt-1">Verified Active Students</p>
+</div>
+<div>
+<span class="font-headline-xl text-headline-xl font-bold text-inverse-on-surface leading-none">45+</span>
+<p class="font-label-md text-label-md text-surface-variant mt-1">Events Hosted This Term</p>
+</div>
+</div>
+</div>
+<!-- Mini Sparkline Representation -->
+<div class="pt-space-md mt-space-xs">
+<svg class="w-full h-8 text-secondary-fixed-dim" fill="none" preserveaspectratio="none" viewbox="0 0 200 30">
+<path d="M0 25 C30 22, 60 28, 90 12 C120 -2, 150 18, 200 6" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="200" cy="6" fill="#fea619" r="3"></circle>
+</svg>
+<div class="flex justify-between items-center text-[10px] text-surface-dim font-bold tracking-wider uppercase mt-1">
+<span>Aug ’25</span>
+<span>Nov ’25 Peak</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Dynamic notice filter interaction
+  document.querySelectorAll('#notice-filter-group .notice-filter').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#notice-filter-group .notice-filter').forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary', 'font-bold');
+        b.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      btn.classList.add('bg-primary', 'text-on-primary', 'font-bold');
+      btn.classList.remove('bg-surface-container', 'text-on-surface');
+    });
+  });
+</script></div></main><footer class="w-full bg-inverse-surface text-inverse-on-surface"><div class="max-w-[1280px] mx-auto px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm mb-space-xs"><span class="font-headline-md text-headline-md text-inverse-on-surface font-bold">Campus Connect</span></div><p class="font-body-sm text-body-sm text-surface-variant leading-relaxed">Empowering campus life, uniting student clubs, peer study groups, and campus resources under one roof.</p></div><div class="flex flex-col gap-space-sm"><h3 class="font-headline-sm text-headline-sm text-inverse-on-surface font-bold mb-space-xs">Quick Links</h3><ul class="flex flex-col gap-space-xs"><li class="font-body-sm text-body-sm text-surface-variant hover:text-inverse-on-surface transition-colors"><a data-path="student-erp" href="#">Student ERP</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-inverse-on-surface transition-colors"><a data-path="digital-library" href="#">Digital Library</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-inverse-on-surface transition-colors"><a data-path="academic-calendar" href="#">Academic Calendar</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-inverse-on-surface transition-colors"><a data-path="campus-map" href="#">Campus Map</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-headline-sm text-headline-sm text-inverse-on-surface font-bold mb-space-xs">Services</h3><ul class="flex flex-col gap-space-xs"><li class="font-body-sm text-body-sm text-surface-variant hover:text-inverse-on-surface transition-colors"><a data-path="campus-forums" href="#">Campus Forums</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-inverse-on-surface transition-colors"><a data-path="lost-and-found" href="#">Lost &amp; Found</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-inverse-on-surface transition-colors"><a data-path="study-groups" href="#">Study Groups</a></li><li class="font-body-sm text-body-sm text-surface-variant hover:text-inverse-on-surface transition-colors"><a data-path="marketplace" href="#">Marketplace</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-headline-sm text-headline-sm text-inverse-on-surface font-bold mb-space-xs">Contact Support</h3><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-variant"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">mail</span><span>support@campusconnect.edu</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">location_on</span><span>Student Affairs Hall B</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">call</span><span>Emergency Helpline: +1 800-555-CAMP</span></div></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-surface-dim">© 2025 Campus Connect. All student rights reserved.</p><div class="flex items-center gap-space-md"><a class="font-label-sm text-label-sm text-surface-dim hover:text-inverse-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="font-label-sm text-label-sm text-surface-dim hover:text-inverse-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a></div></div></div></footer></body></html>
