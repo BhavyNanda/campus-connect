@@ -16,7 +16,7 @@ The root-level `render.yaml` configures the Render web service. Create or update
 
 ## Deploy to Vercel
 
-Import the repository root as the Vercel project. `pyproject.toml` points Vercel to the Flask app, `.python-version` selects Python 3.13, and the frontend assets in `public/` are served by Vercel's CDN. Add `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` in the Vercel project environment settings, then deploy. The Flask app serves the same frontend locally and handles the `/api/*` routes in the Vercel Python runtime.
+Import the repository root as the Vercel project (set **Root Directory** to `.`). The root-level `app.py` exposes the Flask app to Vercel, `vercel.json` includes the frontend files in the function bundle, `.python-version` selects Python 3.13, and assets in `public/` are served by Vercel's CDN. Add `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` in the Vercel project environment settings, then redeploy the latest commit. The Flask app serves the same frontend locally and handles the `/api/*` routes in the Vercel Python runtime.
 
 The Supabase database must have the `users`, `events`, and `registrations` tables shown in `backend/database.png`. Run `backend/supabase_public_api.sql` in the Supabase SQL Editor to allow this unauthenticated API to read events and create/read registrations. These policies make registration data public; replace them with user-scoped policies when authentication is added.
 

@@ -15,8 +15,7 @@ PUBLIC_DIR = PROJECT_ROOT / "public"
 
 app = Flask(
     __name__,
-    static_folder=PUBLIC_DIR / "static",
-    static_url_path="/static",
+    static_folder=None,
 )
 
 supabase: Client = create_client(
@@ -54,6 +53,11 @@ def handle_database_error(error):
 @app.get("/")
 def index():
     return send_from_directory(PUBLIC_DIR, "index.html")
+
+
+@app.get("/static/<path:filename>")
+def static_files(filename):
+    return send_from_directory(PUBLIC_DIR / "static", filename)
 
 
 @app.get("/api/events")
