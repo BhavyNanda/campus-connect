@@ -2,3 +2,4 @@ Flask
 postgrest
 python-dotenv
 supabase
+gunicorn
