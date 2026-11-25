@@ -4,6 +4,7 @@ from uuid import UUID
 
 from dotenv import load_dotenv
 from flask import Flask, jsonify, request, send_from_directory
+from httpx import HTTPError
 from postgrest import APIError
 from supabase import Client, create_client
 
@@ -48,6 +49,14 @@ def handle_database_error(error):
             )
         ), 403
     return jsonify(error="A database error occurred."), 500
+
+
+@app.errorhandler(HTTPError)
+def handle_database_connection_error(error):
+    app.logger.error("Supabase connection failed: %s", error)
+    return jsonify(
+        error="The event service is temporarily unavailable. Please try again shortly."
+    ), 503
 
 
 @app.get("/")
